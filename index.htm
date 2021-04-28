@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Attestazioni dantesche</title>
+	<!--CSS di Bootstrap, mettere sempre in head-->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">Attestazioni dantesche</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Introduzione</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Catalogo
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Lista</a>
+          <a class="dropdown-item" href="#">Luoghi</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Date</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Persone</a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </div>
+</nav>
+
+<h1 class="text-center">
+    Catalogo
+   <small class="text muted">Lista</small>
+</h1>
+</head>
+<body>
+
+<div>
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="#">Home</a></li>
+    <li class="breadcrumb-item active" aria-current="page">Lista</li>
+  </ol>
+</nav>
+</div>
+
+</head>
+
+<body>
+<!--prima riga-->
+<div class="container">
+ <div class="row">
+ 	<div class="col-md-12">
+<!--seconda riga-->
+  <div class="container">
+ 	<div class="row">
+ 		<!-- div con gli aside-->
+ 		<div class="col-md-4">
+ 			<aside>
+ 				<div class="btn-group-vertical">
+                <h1>Riordina la lista</h1>
+                <button type="button" class="btn btn-secondary btn-lg btn-block">A-Z</button>
+                <button type="button" class="btn btn-secondary btn-lg btn-block">Z-A</button>
+                <button type="button" class="btn btn-secondary btn-lg btn-block">Ordine cronologico</button>
+                </div>
+                <div class="btn-group-vertical" class="btn-group dropright">
+                <h1>Filtra la lista</h1>
+                <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Opere
+                </button>
+                <div class="dropdown-menu">
+                <div class="dropdown-item">	
+   	            Convivio
+                </div>
+                <div class="dropdown-item">
+  	            Commedia
+                </div>
+                </div>
+                </div>
+ 			</aside>
+ 		</div>
+ 		<!-- div con pagina di navigazione-->
+ 		<div class="col-md-8">
+ 			<nav aria-label="Page navigation example">
+              <ul class="pagination justify-content-center">
+               <li class="page-item"><a class="page-link" href="#">All</a></li>
+               <li class="page-item"><a class="page-link" href="#">Testi</a></li>
+               <li class="page-item"><a class="page-link" href="#">Immagini</a></li>
+               <li class="page-item"><a class="page-link" href="#">Video</a></li>
+               <li class="page-item"><a class="page-link" href="#">3D</a></li>
+              </ul>
+            </nav>
+            <!--tentativo di nesting delle cards nella colonna della pag di navigazione-->
+            <div class="row">
+            	<div class="col-md-4">
+            	<div class="card" style="width: 15rem;">
+                 <div class="card-body">
+                 <h5 class="card-title">Bronzo di Dante</h5>
+                 <p class="card-text">Creatore, data, istituzione</p>
+                 <a href="#" class="btn btn-primary">Tutti i metadati</a>
+                </div>
+                </div>
+                </div>
+                <div class="col-md-4">
+                <div class="card" style="width: 15rem;">
+                 <div class="card-body">
+                 <h5 class="card-title">Dante e frate Ilario al convento di Santa Croce</h5>
+                 <p class="card-text">Creatore, data, istituzione</p>
+                  <a href="#" class="btn btn-primary">Tutti i metadati</a>
+                </div>
+                </div>
+                </div>
+                <div class="col-md-4">
+                <div class="card" style="width: 15rem;">
+                <div class="card-body">
+                <h5 class="card-title">Il Perticari confutato da Dante</h5>
+                <p class="card-text">Creatore, data, istituzione</p>
+                <a href="#" class="btn btn-primary">Tutti i metadati</a>
+                </div>
+                </div>
+                </div>
+                <div class="col-md-4">
+                	<div class="card" style="width: 15rem;">
+                    <div class="card-body">
+                    <h5 class="card-title">L'Italia e la profezia di Dante Alighieri</h5>
+                    <p class="card-text">Creatore, data, istituzione</p>
+                    <a href="#" class="btn btn-primary">Tutti i metadati</a>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            <!--fine tentativo-->
+ 		</div>
+ 	</div>
+  </div>
+   
+   </div>
+  </div>
+</div>
+
+
+
+<!--JavaScript da Bootstrap, mettere sempre nel body-->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>	
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>
